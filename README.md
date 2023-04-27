@@ -17,3 +17,23 @@ Links:
 * [[Link](https://nvchad.com)] - NvChad official website
 * [[Link](https://github.com/NvChad/NvChad)] - NvChad Github repository
 
+
+#### tmux
+Default installation:
+```bash
+# install tmux
+sudo pacman -S tmux
+
+# copy config
+cp .tmux.conf ~/.tmux.conf
+
+# install plugins and apply config
+tmux
+vim ~/.tmux.conf
+# <prefix> + I -> installs plugins
+tmux source ~/.tmux.conf
+```
+
+Links:
+* [[Link](https://github.com/tmux-plugins/tpm)] - tmux plugins
+
