@@ -14,7 +14,6 @@ cp -r ./nvim/* ~/.config/nvim/
 ```
   
 Links:
-* [[Link](https://nvchad.com)] - NvChad official website]
-* [[Link](https://github.com/NvChad/NvChad) - NvChad Github repository]
-
+* [[Link](https://nvchad.com)] - NvChad official website
+* [[Link](https://github.com/NvChad/NvChad)] - NvChad Github repository
 
