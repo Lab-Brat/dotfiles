@@ -16,6 +16,8 @@ cp -r ./nvim/* ~/.config/nvim/
 Links:
 * [[Link](https://nvchad.com)] - NvChad official website
 * [[Link](https://github.com/NvChad/NvChad)] - NvChad Github repository
+* [[Link]](https://github.com/averms/black-nvim) - Python Black formatter plugin
+* [[Link]](https://github.com/zbirenbaum/copilot.lua) - Github Copilot plugin
 
 
 #### tmux
