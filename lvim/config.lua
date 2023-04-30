@@ -64,4 +64,7 @@ lvim.plugins = {
     "folke/trouble.nvim",
     cmd = "TroubleToggle",
   },
+  {
+    "github/copilot.vim",
+  },
 }
