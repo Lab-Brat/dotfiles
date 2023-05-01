@@ -11,7 +11,9 @@ vim.opt.relativenumber = false
 lvim.log.level = "info"
 lvim.format_on_save = true
 lvim.lsp.diagnostics.virtual_text = false
--- lvim.colorscheme = "onedark"
+-- disable automatic pylyzer installation
+lvim.lsp.installer.setup.automatic_installation = false
+-- lvim.colorscheme = "onedarker"
 
 -- to disable icons and use a minimalist setup, uncomment the following
 -- lvim.use_icons = false
