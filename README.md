@@ -1,6 +1,10 @@
 ### dotfiles
 This repository is a collection of all my dotfiles (.blabla) 
-that I use to configure nvim, tmux and many other Linux programs.  
+that I use to configure nvim, tmux and many other Linux programs. 
+
+#### Neovim
+Neovim configuration:
+`nvim`
 
 #### LunarVim
 Default installation:
