@@ -12,16 +12,16 @@ return require('packer').startup(function(use)
 	  'nvim-telescope/telescope.nvim', tag = '0.1.1',
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
-  
+
   -- Colorscheme
-  use({ 
-	  'rose-pine/neovim', 
+  use({
+	  'rose-pine/neovim',
 	  as = 'rose-pine',
 	  config = function()
 		  vim.cmd('colorscheme rose-pine')
 	  end
   })
-  
+
   -- Treesitter
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 
@@ -30,23 +30,19 @@ return require('packer').startup(function(use)
 	  'VonHeikemen/lsp-zero.nvim',
 	  branch = 'v2.x',
 	  requires = {
-		  -- LSP Support
-		  {'neovim/nvim-lspconfig'},             -- Required
-		  {                                      -- Optional
-		  'williamboman/mason.nvim',
-		  run = function()
-			  pcall(vim.cmd, 'MasonUpdate')
-		  end,
-	  },
-	  {'williamboman/mason-lspconfig.nvim'}, -- Optional
+		  {'neovim/nvim-lspconfig'},
+		  {
+			  'williamboman/mason.nvim',
+			  run = ":MasonUpdate"
+		  },
+		  {'williamboman/mason-lspconfig.nvim'},
 
-	  -- Autocompletion
-	  {'hrsh7th/nvim-cmp'},     -- Required
-	  {'hrsh7th/cmp-nvim-lsp'}, -- Required
-	  {'L3MON4D3/LuaSnip'},     -- Required
+		  {'hrsh7th/nvim-cmp'},
+		  {'hrsh7th/cmp-nvim-lsp'},
+		  {'L3MON4D3/LuaSnip'},
+	  }
   }
-}
-  
+
   -- File Tree
   use {
 	  'nvim-tree/nvim-tree.lua',
@@ -57,13 +53,14 @@ return require('packer').startup(function(use)
 		  require("nvim-tree").setup {}
 	  end
 }
-  
+
   -- Toggleterm
   use {
-	  "akinsho/toggleterm.nvim", 
-	  tag = '*', 
+	  "akinsho/toggleterm.nvim",
+	  tag = '*',
 	  config = function()
-	  require("toggleterm").setup()
-  end}
+	  	require("toggleterm").setup()
+	  end
+  }
 
 end)
