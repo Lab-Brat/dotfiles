@@ -47,7 +47,7 @@ return require('packer').startup(function(use)
   use {
 	  'nvim-tree/nvim-tree.lua',
 	  requires = {
-		  'nvim-tree/nvim-web-devicons', -- optional
+		  'nvim-tree/nvim-web-devicons',
 	  },
 	  config = function()
 		  require("nvim-tree").setup {}
@@ -63,4 +63,22 @@ return require('packer').startup(function(use)
 	  end
   }
 
+  -- Copilot
+  use {
+	  "zbirenbaum/copilot.lua",
+-- 	  cmd = "Copilot",
+--        event = "InsertEnter",
+	  config = function()
+		  require("copilot").setup({})
+	  end,
+  }
+
+  -- Copilot CMP
+  use {
+	  "zbirenbaum/copilot-cmp",
+	  after = { "copilot.lua" },
+	  config = function ()
+		  require("copilot_cmp").setup()
+	  end
+  }
 end)
