@@ -1,5 +1,4 @@
-require("labbrat")
-require("labbrat.packer")
-
-require("copilot")
-
+require "options"
+require "keymaps"
+require "Lazy"
+require "autocommands"
