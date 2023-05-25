@@ -15,7 +15,7 @@ local actions = require "telescope.actions"
 
 M.opts = {
   defaults = {
-    prompt_prefix = " ",
+    prompt_prefix = ">>> ",
     selection_caret = " ",
     path_display = { "smart" },
     file_ignore_patterns = { ".git/", "node_modules" },
