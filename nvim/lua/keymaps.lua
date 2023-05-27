@@ -67,3 +67,11 @@ keymap("x", "<leader>/", "<esc><cmd>lua require('Comment.api').toggle.linewise(v
 
 -- Lsp
 keymap("n", "<leader>lf", "<cmd>lua vim.lsp.buf.format{ async = true }<cr>", opts)
+
+-- Trouble
+keymap("n", "<leader>tg", ":TroubleToggle<CR>")
+
+-- Copliot
+keymap("n", "<leader>gs", ":Copilot suggestion<CR>")
+keymap("n", "<leader>gp", ":Copilot panel<CR>")
+
