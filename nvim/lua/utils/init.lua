@@ -6,6 +6,7 @@ M.servers = {
   "html",
   "tsserver",
   "pyright",
+  -- "jedi_language_server",
   "bashls",
   "jsonls",
   -- "yamlls",
