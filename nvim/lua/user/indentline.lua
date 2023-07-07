@@ -13,7 +13,6 @@ M.opts = {
   filetype_exclude = {
     "help",
     "packer",
-    "NvimTree",
   },
 }
 
