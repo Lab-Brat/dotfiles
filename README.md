@@ -18,7 +18,6 @@ LV_BRANCH='release-1.3/neovim-0.9' bash <(curl -s https://raw.githubusercontent.
 Links:
 * [[Link](https://www.lunarvim.org)] - LunarVim official website
 * [[Link](https://github.com/LunarVim/LunarVim)] - LunarVim Github repository
-* [[Link]](https://github.com/github/copilot.vim) - Github Copilot plugin
 
 
 #### tmux
