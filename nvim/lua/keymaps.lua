@@ -67,8 +67,3 @@ keymap("n", "<leader>lf", "<cmd>lua vim.lsp.buf.format{ async = true }<cr>", opt
 
 -- Trouble
 keymap("n", "<leader>tg", ":TroubleToggle<CR>")
-
--- Copliot
-keymap("n", "<leader>gs", ":Copilot suggestion<CR>")
-keymap("n", "<leader>gp", ":Copilot panel<CR>")
-
