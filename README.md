@@ -6,20 +6,6 @@ that I use to configure nvim, tmux and many other Linux programs.
 Neovim configuration:
 `nvim`
 
-#### LunarVim
-Default installation:
-```bash
-# install node js and rust
-sudo pacman -S node
-curl https://sh.rustup.rs -sSf | sh
-LV_BRANCH='release-1.3/neovim-0.9' bash <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.3/neovim-0.9/utils/installer/install.sh)
-```
-  
-Links:
-* [[Link](https://www.lunarvim.org)] - LunarVim official website
-* [[Link](https://github.com/LunarVim/LunarVim)] - LunarVim Github repository
-
-
 #### tmux
 Default installation:
 ```bash
@@ -38,4 +24,12 @@ tmux source ~/.tmux.conf
 
 Links:
 * [[Link](https://github.com/tmux-plugins/tpm)] - tmux plugins
+
+#### zsh
+Installation:
+```bash
+sudo pacman -Syu zsh
+chsh -s $(which zsh)
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
 
