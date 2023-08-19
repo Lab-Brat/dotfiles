@@ -16,9 +16,7 @@ export PROMPT='%(!.%B%F{red}.%B%F{green}%n@)%m %F{blue}%1~ ${vcs_info_msg_0_}%F{
 # custom PATH variables
 export scripts='/home/labbrat/scripts'
 export pip_path='/home/labbrat/.local/bin'
-export inf='/home/labbrat/cloudlinux/notes/info.txt'
-export ck='/home/labbrat/cloudlinux/keys/clkey'
-export cr='/home/labbrat/cloudlinux/keys/ipa3'
+
 export usrlocbin='/usr/local/bin'
 export PATH=$PATH:$scripts:$pip_path:$inf:$ck:$cr:$usrlocbin
 
