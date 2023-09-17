@@ -6,7 +6,7 @@ ENABLE_CORRECTION="true"
 plugins=(git)
 
 # ZSH theme
-source $ZSH/oh-my-zsh.sh
+source "/home/labbrat/.oh-my-zsh/oh-my-zsh.sh"
 
 # ZSH prompt
 export PROMPT='%(!.%B%F{red}.%B%F{green}%n@)%m %F{blue}%1~ ${vcs_info_msg_0_}%F{blue}%(!.#.$)%k%b%f '
