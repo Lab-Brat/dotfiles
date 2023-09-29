@@ -6,6 +6,8 @@ that I use to configure nvim, tmux and many other Linux programs.
 Neovim configuration:
 `nvim`
 
+**Note**: `OPENAI_API_KEY` env variable is required to use ChatGPT in neovim
+
 #### tmux
 Default installation:
 ```bash
