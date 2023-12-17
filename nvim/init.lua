@@ -175,6 +175,12 @@ require('lazy').setup({
     },
   },
 
+  -- Illuminate - highlight same word across file
+  {
+    "RRethy/vim-illuminate",
+    event = "VeryLazy",
+  },
+
   -- ChatGPT
   {
   "jackMort/ChatGPT.nvim",
