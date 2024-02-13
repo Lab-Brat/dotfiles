@@ -166,6 +166,18 @@ require('lazy').setup({
     build = ':TSUpdate',
   },
 
+  {
+  "https://github.com/apple/pkl-neovim",
+    lazy = true,
+    event = "BufReadPre *.pkl",
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter",
+    },
+    build = function()
+      vim.cmd("TSInstall! pkl")
+    end,
+  },
+
   -- Trouble - show code errors in one place
   {
     "folke/trouble.nvim",
