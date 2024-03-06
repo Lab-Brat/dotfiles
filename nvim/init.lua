@@ -103,12 +103,19 @@ require('lazy').setup({
   },
 
   -- Set theme
+  -- {
+  --   "catppuccin/nvim",
+  --   name = "catppuccin",
+  --   priority = 1000,
+  --   config = function()
+  --     vim.cmd.colorscheme 'catppuccin'
+  --   end,
+  -- },
   {
-    "catppuccin/nvim",
-    name = "catppuccin",
-    priority = 1000,
+    "rose-pine/neovim",
+    as = "rose-pine",
     config = function()
-      vim.cmd.colorscheme 'catppuccin'
+      vim.cmd.colorscheme 'rose-pine'
     end,
   },
 
