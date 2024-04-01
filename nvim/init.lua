@@ -116,6 +116,7 @@ require('lazy').setup({
     as = "rose-pine",
     config = function()
       vim.cmd.colorscheme 'rose-pine'
+      -- vim.cmd.colorscheme 'rose-pine-dawn'
     end,
   },
 
@@ -246,6 +247,7 @@ vim.o.completeopt = 'menuone,noselect' -- Set completeopt to have a better compl
 vim.o.termguicolors = true
 vim.wo.number = true -- Make line numbers default
 vim.wo.signcolumn = 'yes' -- Keep signcolumn on by default
+vim.wo.relativenumber = true -- Use relative line numbers to simplify jumping around the file
 
 
 -- [[ Basic Keymaps ]]
