@@ -61,7 +61,20 @@ require('lazy').setup({
   },
 
   -- Useful plugin to show you pending keybinds.
-  { 'folke/which-key.nvim', opts = {} },
+  {
+    'folke/which-key.nvim',
+    event = "VeryLazy",
+    opts = {},
+    keys = {
+      {
+        "<leader>?",
+        function()
+          require("which-key").show({ global = false })
+        end,
+        desc = "Buffer Local Keymaps (which-key)",
+      },
+    },
+  },
 
   -- Git signs
   {
@@ -199,34 +212,6 @@ require('lazy').setup({
   {
     "RRethy/vim-illuminate",
     event = "VeryLazy",
-  },
-
-  -- ChatGPT
-  {
-  "jackMort/ChatGPT.nvim",
-    event = "VeryLazy",
-    config = function()
-      require("chatgpt").setup()
-    end,
-    dependencies = {
-      "MunifTanjim/nui.nvim",
-      "nvim-lua/plenary.nvim",
-      "nvim-telescope/telescope.nvim",
-    },
-  },
-
-  -- Github Copilot
-  {
-    "zbirenbaum/copilot.lua",
-    cmd = "Copilot",
-    event = "VeryLazy",
-    config = function()
-      require("copilot").setup(
-        {
-          suggestion = {enabled = false},
-        }
-      )
-    end,
   },
 
 }, {})
@@ -416,16 +401,6 @@ local on_attach = function(_, bufnr)
   end, { desc = 'Format current buffer with LSP' })
 end
 
-require('which-key').register {
-  ['<leader>c'] = { name = '[C]ode', _ = 'which_key_ignore' },
-  ['<leader>d'] = { name = '[D]ocument', _ = 'which_key_ignore' },
-  ['<leader>g'] = { name = '[G]it', _ = 'which_key_ignore' },
-  ['<leader>h'] = { name = 'More git', _ = 'which_key_ignore' },
-  ['<leader>r'] = { name = '[R]ename', _ = 'which_key_ignore' },
-  ['<leader>s'] = { name = '[S]earch', _ = 'which_key_ignore' },
-  ['<leader>w'] = { name = '[W]orkspace', _ = 'which_key_ignore' },
-}
-
 require('mason').setup()
 require('mason-lspconfig').setup()
 
@@ -514,4 +489,17 @@ cmp.setup {
     { name = 'nvim_lsp' },
     { name = 'luasnip' },
   },
+}
+
+
+-- [[ Configure which-key ]]
+
+require('which-key').add {
+  {'<leader>c', desc = '[C]ode'},
+  {'<leader>d', name = '[D]ocument' },
+  {'<leader>g', name = '[G]it' },
+  {'<leader>h', name = 'More git' },
+  {'<leader>r', name = '[R]ename' },
+  {'<leader>s', name = '[S]earch' },
+  {'<leader>w', name = '[W]orkspace' },
 }
